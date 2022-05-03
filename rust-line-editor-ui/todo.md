@@ -1,0 +1,3 @@
+- log student score
+- debug why problem 2 is correct
+- debug line numbers in Dockerfile

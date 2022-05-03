@@ -1,0 +1,32 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.right {
+  left: 50%;
+  width: 50%;
+}
+
+.padTop {
+  padding-top: 13px;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.centerText {
+  text-align: center;
+}

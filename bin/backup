@@ -1,0 +1,15 @@
+#!/bin/bash -x
+
+# move into directory to make things easier
+cd /home/anandrav/fplab-server
+
+if [ ! -d "../backups" ]; then
+    mkdir ../backups
+fi
+
+timestamp=$(/bin/date +\%m_\%d_\%T)
+filename=../backups/fp.sqlite3.bak.$timestamp
+sqlite3 db/fp.sqlite3 ".backup $filename"
+
+touch ../done.txt
+

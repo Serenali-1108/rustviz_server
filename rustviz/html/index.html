@@ -1,0 +1,68 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover'>
+        <link rel='stylesheet' href='/css/front.css'/>
+        <title>An Interactive Visual Introduction to Rust</title>
+    </head>
+    <body>
+        <div class="alert">
+            <span class="alert-level">WAIT!</span>Please remember to <em>disable</em> all adblockers and <em>enable</em> cookies.
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        </div>
+
+        <div style='display: flex; flex-direction: column; align-items: center; flex-shrink: 0; flex-grow: 0;'>
+            <h1>An Interactive Visual Introduction to Rust</h1>
+        </div>
+
+        <div style='width: 90%'>
+            <div style='font-size:24px; width: 50%; margin: 0 auto; margin-top: 5vh;'>
+                <pre style='font-family: monospace; color: rgb(55, 53, 47); font-size: 0.75em; font-weight: 600;'>
+                 _____________
+                / Welcome     \
+                | fellow      |
+                \ Rustaceans! /
+                 -------------
+                        \
+                         \
+                            _~^~^~_
+                        \) /  o o  \ (/
+                          '_   -   _'
+                          / '-----' \
+                </pre>
+            </div>
+        </div>
+
+        <!-- login form -->
+        <div style='width: 90%'>
+            <div style='width: 50%; margin: 0 auto'>
+                {{#if (eq logged_in 1)}}
+                <button class='btn btn-orange' style='width: 15vh;' onclick="window.location='/book'">Read the tutorial (Firefox Only)</button>
+                <button class='btn btn-orange' style='width: 15vh;' onclick="window.location='/fp'">Q2</button>
+                <button class='btn btn-orange' style='width: 15vh;' onclick="window.location='/assignment'">Q3</button>
+                <form action='/accounts/logout/' method='post' style='display: inline;'>
+                    <input class='btn btn-pelorous' style='width: 15vh; margin-left: 5vh;' type='submit' name='Log out' value='Log out' />
+                </form>
+                {{else}}
+                <button class='btn btn-pelorous' style='width: 15vh; margin-left: 5vh;' onclick="window.location='/accounts/login/'">Log in</button>
+                {{/if}}
+            </div>
+        </div>
+
+        <div>
+            <h2>Research Team</h2>
+            <ul>
+                <li>Cyrus Omar [Assistant Professor]</li>
+                <li>Gabriel Luo</li>
+                <li>Haochen Zhang</li>
+                <li>Ke Du</li>
+                <li>Marcelo Almeida</li>
+                <li>Vishnu Reddy</li>
+                <li>Yingying Zhu</li>
+                <li>Yu Pan</li>
+                <li>Anand Dukkipati</li>
+                <li>Ethan Brooks</li>
+            </ul>
+        </div>
+    </body>
+</html>

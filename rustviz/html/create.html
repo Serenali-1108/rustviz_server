@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+        <link rel="stylesheet" href="/css/front.css"/>
+        <title>Future of Programming Lab</title>
+    </head>
+
+    <body>
+        <a href="/">FP Lab</a>
+        <hr>
+
+        <div style="margin-left: 5%;">
+            <form action="/accounts/create/" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="form_in">
+                    <label style="width: 100px;">Name</label>
+                    <input type="text" name="token" placeholder="Your unique token" required/>
+                </div>
+                <input class="btn btn-pelorous" style="margin-left: 110px;" type="submit" name="signup" value="sign up"/>
+              </form>
+        </div>
+        <p style="padding-top: 5%; margin-left: 5%;">
+            Have an account?
+            <a href="/accounts/login/">
+                <strong>Log in</strong>
+            </a>
+        </p>
+    </body>
+</html>
